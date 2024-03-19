@@ -30,7 +30,7 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="nav navbar-nav ms-auto w-100 justify-content-end">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#">ATCSCC Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Products</a>
@@ -58,41 +58,45 @@
     <div class="jumbotron jumbotron-fluid bg-light">
         <div class="container">
             <h1 class="display-4">Air Traffic Control System Command Center </h1>
-            <p class="lead">Select items from the Advisories Database
-            </p>
+          
             
         </div>
     </div>
     <section>
         <div class="container">
             <form>
-                <div class="row py-4 my-4 align-items-center">
-                    <p class="lead">You can choose to see ATCSCC Advisories, Canadian Advisories or both. </p>                <div class="row gy-2 gx-3 align-items-center">
+                    <h2>Select items from the Advisories Database</h2>
+                    <hr class="hr hr-blurry" />
+                    <p class="h4 mb-3">Choose which types of advisories you'd like to see and a day from the drop-down list.</p>
+                    <p class="h5">You can choose to see ATCSCC Advisories, Canadian Advisories or both.  </p>
+                    
+                    <div class="row gy-2 gx-3 align-items-center">
                     <div class="col-auto">
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" value="" id="form11Example2" checked />
-                            <label class="form-check-label" for="form11Example2"> ATCSCC Advisories only </label>
+                            <input class="form-check-input" type="radio" id="ATCSCC" name="advisories" checked />
+                            <label class="form-check-label" for="ATCSCC"> ATCSCC Advisories </label>
                         </div>
                     </div>
                     <div class="col-auto">
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" value="" id="form11Example2" checked />
-                            <label class="form-check-label" for="form11Example2"> Canadian Advisories only </label>
+                            <input class="form-check-input" type="radio" id="Canadian" name="advisories"  />
+                            <label class="form-check-label" for="Canadian"> Canadian Advisories </label>
                         </div>
                     </div>
                     <div class="col-auto">
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" value="" id="form11Example2" checked />
-                            <label class="form-check-label" for="form11Example2"> ATCSCC and Canadian Advisories</label>
+                            <input class="form-check-input" type="radio" 
+                                name="advisories" id="Both"  />
+                            <label class="form-check-label" for="Both">Both</label>
                         </div>
                     </div>
                 </div>
                 <div class="row py-2 my-3 align-items-center">
                     <div class="col-auto">
                         <div class="form-select">
-                            <label class="visually-hidden" for="inlineFormSelectPref">Choose to see a day from the drop-down list:</label>
+                            <label class="visually-hidden" for="inlineFormSelectPref">Select a day from the drop-down list:</label>
                             <!-- Date List -->
-                            <select data-mdb-select-init class="select">
+                            <select class="select">
                                 <option selected="">Monday, 03-18-2024
                                 </option>
                                 <option>Sunday, 03-17-2024
@@ -131,8 +135,8 @@
                 <div class="row py-2 my-3 align-items-center">
                     <div class="col-auto">
                         <div class="form-check">
-                            <input class="form-check-input" id="AllAdvisory" type="radio" checked=""
-                                name="AdvisoryCategory" value="All" onclick="checkAll(document.forms[0],true);" />
+                            <input class="form-check-input" id="AllAdvisory" type="radio" 
+                                name="AdvisoryCategory" />
                             <label class="form-check-label" for="form11Example2"> Show all advisories in sequential
                                 order</label>
                         </div>
@@ -140,7 +144,7 @@
                     <div class="col-auto">
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="AdvisoryCategory" value="NotAll"
-                                onclick="checkGdelay(document.forms[0]);" />
+                               checked/>
                             <label class="form-check-label" for="form11Example2"> Show selected advisory types by
                                 category...</label>
                         </div>
@@ -151,9 +155,7 @@
                         <div class="alert alert-warning alert-dismissible fade show" role="alert">
                             Use the checkboxes below to specify your advisory category selection (<strong>the checkboxes apply
                                 only to ATCSCC advisories</strong>).
-                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                            </button>
+                         
                           </div>
                 <div class="row py-2 my-3 align-items-center">
                     <div class="col-auto">
@@ -189,7 +191,7 @@
                     </div>
                 </div>
                 <hr class="hr hr-blurry" /> 
-                <div class="row py-2 my-3align-items-center">
+                <div class="row py-2 my-3 justify-content-end">
                     <div class="col-auto">
                 <button type="button" class="btn btn-secondary"  onclick="window.location='/adv/advADB.jsp';"> Back to Most Recent Advisory</button>
 
