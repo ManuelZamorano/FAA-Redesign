@@ -2,290 +2,258 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>Advisory Database Form</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <!-- Bootstrap icons-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet"
-        type="text/css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
-        type="text/css" />
- 
-</head>
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title>Advisory Database Form</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- Option 1: Include in HTML -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.16/css/bootstrap-multiselect.css">
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.16/js/bootstrap-multiselect.min.js"></script>
+
+  <!-- Bootstrap Datepicker CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/css/bootstrap-datepicker.min.css"
+    rel="stylesheet">
+
+
+  <!-- Bootstrap Datepicker JS -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
+    type="text/css" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"
+    integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css" </head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.3/xlsx.full.min.js"></script>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
-        <div class="container">
-            <a class="navbar-brand" href="http://www.faa.gov/"><img src="images/head_logo_left.gif" /></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="nav navbar-nav ms-auto w-100 justify-content-end">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">ATCSCC Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Products</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">What's New</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Site Map</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">FAQ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Diversion Forums</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Text-Only Version</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <div class="jumbotron jumbotron-fluid bg-light">
-        <div class="container">
-            <h1 class="display-4">Air Traffic Control System Command Center </h1>      
-        </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <div class="container">
+      <a class="navbar-brand" href="http://www.faa.gov/"><img src="images/head_logo_left.gif" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="nav navbar-nav ms-auto w-100 justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">ATCSCC Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">What's New</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Site Map</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Diversion Forums</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Text-Only Version</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <section>
-        <div class="container">
-            <form>
-                    <h2>Select items from the Advisories Database</h2>
-                    <hr class="hr hr-blurry" />
-                    <p class="h4 mb-3">Choose which types of advisories you'd like to see and a day from the drop-down list.</p>
-                    <p class="h5">You can choose to see <strong>ATCSCC Advisories</strong>, <strong>Canadian Advisories</strong> or <strong>Both</strong>  </p>
-                    
-                    <div class="row gy-2 gx-3 align-items-center">
-                    <div class="col-auto">
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" id="ATCSCC" name="advisories" checked />
-                            <label class="form-check-label" for="ATCSCC"> ATCSCC Advisories </label>
-                        </div>
-                    </div>
-                    <div class="col-auto">
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" id="Canadian" name="advisories"  />
-                            <label class="form-check-label" for="Canadian"> Canadian Advisories </label>
-                        </div>
-                    </div>
-                    <div class="col-auto">
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" 
-                                name="advisories" id="Both"  />
-                            <label class="form-check-label" for="Both">Both</label>
-                        </div>
-                    </div>
-                </div>
-                <div class="row py-2 my-3 align-items-center">
-                    <div class="col-auto">
-                        <div class="form-select">
-                            <label class="visually-hidden" for="inlineFormSelectPref">Select a day from the drop-down list:</label>
-                            <!-- Date List -->
-                            <select class="select">
-                                <option selected="">Monday, 03-18-2024
-                                </option>
-                                <option>Sunday, 03-17-2024
-                                </option>
-                                <option>Saturday, 03-16-2024
-                                </option>
-                                <option>Friday, 03-15-2024
-                                </option>
-                                <option>Thursday, 03-14-2024
-                                </option>
-                                <option>Wednesday, 03-13-2024
-                                </option>
-                                <option>Tuesday, 03-12-2024
-                                </option>
-                                <option>Monday, 03-11-2024
-                                </option>
-                                <option>Sunday, 03-10-2024
-                                </option>
-                                <option>Saturday, 03-09-2024
-                                </option>
-                                <option>Friday, 03-08-2024
-                                </option>
-                                <option>Thursday, 03-07-2024
-                                </option>
-                                <option>Wednesday, 03-06-2024
-                                </option>
-                                <option>Tuesday, 03-05-2024
-                                </option>
-                                <option>Monday, 03-04-2024
-                                </option>
-                            </select>
+  </nav>
 
-                        </div>
-                    </div>
-                </div>
-                <div class="row py-2 my-3 align-items-center">
-                    <div class="col-auto">
-                        <div class="form-check">
-                            <input class="form-check-input" id="AllAdvisory" type="radio" 
-                                name="AdvisoryCategory" />
-                            <label class="form-check-label" for="form11Example2"> Show all advisories in sequential
-                                order</label>
-                        </div>
-                    </div>
-                    <div class="col-auto">
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="AdvisoryCategory" value="NotAll"
-                               checked/>
-                            <label class="form-check-label" for="form11Example2"> Show selected advisory types by
-                                category...</label>
-                        </div>
-                    </div>
-                </div>
-                        <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                            Use the checkboxes below to specify your advisory category selection (<strong>the checkboxes apply
-                                only to ATCSCC advisories</strong>).
-                         
-                          </div>
-                <div class="row py-2 my-3 align-items-center">
-                    <div class="col-auto">
-                        <div class="form-check">
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" />
-                                <label class="form-check-label" for="inlineCheckbox1">Airspace
-                                    Flow Program</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2" />
-                                <label class="form-check-label" for="inlineCheckbox2">CTOP Programs</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2" />
-                                <label class="form-check-label" for="inlineCheckbox2">Ground Stops</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2" />
-                                <label class="form-check-label" for="inlineCheckbox2">Ground Delay Programs</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2" />
-                                <label class="form-check-label" for="inlineCheckbox2">Route
-                                    advisories</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2" />
-                                <label class="form-check-label" for="inlineCheckbox2">Other kinds
-                                    of advisories</label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <hr class="hr hr-blurry" /> 
-                <div class="row py-2 my-3 justify-content-end">
-                    <div class="col-auto">
-                <button type="button" class="btn btn-secondary"  onclick="window.location='/adv/advADB.jsp';"> Back to Most Recent Advisory</button>
 
-                <button type="button" class="btn btn-primary">Show Selected Advisories</button>
-                        </div>
+  <section>
+    <div class="container">
+      <main>
+        <div class="row g-5">
+          <div class="col-md-10 col-lg-12">
+            <form id="search-form">
+              <div class="row g-3">
+                <div class="col-md-3">
+                  <label for="Advisories" class="form-label">Advisories <i class="bi bi-info-circle"
+                      data-toggle="tooltip" data-placement="right"
+                      title="Select to see ATCSCC Advisories, Canadian Advisories or both."></i></label>
+                  <select class="form-select" id="advisories">
+                    <option>ATCSCC Advisories</option>
+                    <option>Canadian Advisories</option>
+                    <option>Both</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please select a valid country.
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="form-group">
+                    <label for="datepicker" class="form-label">Choose a date</label>
+                    <div class='input-group date' id='datepicker'>
+                      <input type='text' class="form-control" id="date" />
+                      <span class="input-group-addon">
+                        <span class="bi bi-calendar2-date" style="	position:absolute;
+                      right: 0px;
+                      padding: 2px 20px;">
+                        </span>
+                      </span>
                     </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <label for="categories" class="form-label">Filter category</label><br>
+                  <select class="form-select" id="categories" multiple>
+                    <option>CTOP Programs</option>
+                    <option>Ground Stops</option>
+                    <option>Ground Delay Programs</option>
+                    <option>Route advisories</option>
+                    <option>Other kinds of advisories</option>
+                    <option>Airspace Flow Program</option>
+                  </select>
+                </div>
+                <div class="col-md-3">
+                  <div class="mt-10" style="padding-top: 30px;">
+                    <button class="btn btn-primary" type="submit" id="searchButton">Search</button>
+                  </div>
+                </div>
+              </div>
             </form>
-
+          </div>
         </div>
-    </section>
+        <div class="row mt-3">
 
-  
-      
-           
-           
-        
-    </footer>
+          <div class="input-group mb-3" style="display: none;">
+            <input type="text" class="form-control" placeholder="Search for a location" id="searchInput">
+            <div class="input-group-append">
 
-    <footer class="text-center text-white" style="background-color: #1c2331">
-        <!-- Grid container -->
-        <div class="container">
-          <!-- Section: Links -->
-          <section class="mt-12">
-            <!-- Grid row-->
-            <div class="row text-center d-flex justify-content-center pt-5">
-              <!-- Grid column -->
-              <div class="col-md-3">
-                <h6 class="text-uppercase font-weight-bold">
-                    <a href="#" class="nav-link px-2 text-white">FAA.gov Home</a>
-                </h6>
-              </div>
-              <!-- Grid column -->
-    
-              <!-- Grid column -->
-              <div class="col-md-3">
-                <h6 class="text-uppercase font-weight-bold">
-                    <a href="#" class="nav-link px-2 text-white">Privacy Policy</a>
-                </h6>
-              </div>
-              <!-- Grid column -->
-    
-              <!-- Grid column -->
-              <div class="col-md-3">
-                <h6 class="text-uppercase font-weight-bold">
-                    <a href="#" class="nav-link px-2 text-white">Web Policies &amp; Notices</a>
-                </h6>
-              </div>
-              <!-- Grid column -->
-    
-              <!-- Grid column -->
-              <div class="col-md-3">
-                <h6 class="text-uppercase font-weight-bold">
-                    <a href="#" class="nav-link px-2 text-white">Contact Us</a>
-                </h6>
-              </div>
-              <!-- Grid column -->
             </div>
-            <!-- Grid row-->
-          </section>
-          <!-- Section: Links -->
-    
-          <hr class="my-5" />
-    
-          <!-- Section: Text -->
-          <section class="mb-12">
-            <div class="row d-flex justify-content-center">
-              <div class="col-lg-12">
-                <p>
-                    <ul class="nav justify-content-center">
-                        <li class="nav-item"><a href="#" class="nav-link px-2 text-white" href="http://www.faa.gov/viewer_redirect.cfm?viewer=pdf&amp;server_name=www.faa.gov">PDF Reader</a> </li>
-                        <li class="nav-item"><a href="#" class="nav-link px-2 text-white" href="http://www.faa.gov/viewer_redirect.cfm?viewer=doc&amp;server_name=www.faa.gov">MS Word Viewer</a> </li>
-                        <li class="nav-item"><a href="#" class="nav-link px-2 text-white" href="http://www.faa.gov/viewer_redirect.cfm?viewer=ppt&amp;server_name=www.faa.gov">MS PowerPoint Viewer</a> </li>
-                        <li class="nav-item"><a href="#" class="nav-link px-2 text-white" href="http://www.faa.gov/viewer_redirect.cfm?viewer=xls&amp;server_name=www.faa.gov">MS Excel Viewer</a> </li>
-                        <li class="nav-item"><a href="#" class="nav-link px-2 text-white" href="http://www.faa.gov/viewer_redirect.cfm?viewer=zip&amp;server_name=www.faa.gov">WinZip</a></li>
-        
-                    </ul>
-                </p>
-              </div>
-            </div>
-          </section>
-          <!-- Section: Text -->
-    
-          
-        </div>
-        <!-- Grid container -->
-    
-        <!-- Copyright -->
-        <div
-             class="text-center p-3"
-             style="background-color: rgba(0, 0, 0, 0.2)"
-             >
-          © 2024 Copyright:
-         
-        </div>
-        <!-- Copyright -->
-      </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+          </div>
+          <div class="col-md-4 mb-5">
+            <div class="util">
+              <button id="export-btn" type="button" class="btn btn-success btn-sm">Export to Excel</button></div>
+            <h4>Current Advisories </h4>
+
+            <div class="container" style="height: 500px ;overflow-y: scroll;">
+              <div id="data-container">
+                            <!-- Data will be dynamically added here -->
+
+              </div>
+             
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="container">
+              <div class="map-container" id="map"></div>
+
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </section>
+  <footer class="text-center text-white" style="background-color: #1c2331; margin-top: 30px;">
+    <!-- Grid container -->
+    <div class="container">
+      <!-- Section: Links -->
+      <section class="mt-12">
+        <!-- Grid row-->
+        <div class="row text-center d-flex justify-content-center pt-5">
+          <!-- Grid column -->
+          <div class="col-md-3">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#" class="nav-link px-2 text-white">FAA.gov Home</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#" class="nav-link px-2 text-white">Privacy Policy</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#" class="nav-link px-2 text-white">Web Policies &amp; Notices</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#" class="nav-link px-2 text-white">Contact Us</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row-->
+      </section>
+      <!-- Section: Links -->
+
+      <hr class="my-5" />
+
+      <!-- Section: Text -->
+      <section class="mb-12">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-12">
+            <p>
+            <ul class="nav justify-content-center">
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-white"
+                  href="http://www.faa.gov/viewer_redirect.cfm?viewer=pdf&amp;server_name=www.faa.gov">PDF Reader</a>
+              </li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-white"
+                  href="http://www.faa.gov/viewer_redirect.cfm?viewer=doc&amp;server_name=www.faa.gov">MS Word
+                  Viewer</a> </li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-white"
+                  href="http://www.faa.gov/viewer_redirect.cfm?viewer=ppt&amp;server_name=www.faa.gov">MS PowerPoint
+                  Viewer</a> </li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-white"
+                  href="http://www.faa.gov/viewer_redirect.cfm?viewer=xls&amp;server_name=www.faa.gov">MS Excel
+                  Viewer</a> </li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-white"
+                  href="http://www.faa.gov/viewer_redirect.cfm?viewer=zip&amp;server_name=www.faa.gov">WinZip</a></li>
+
+            </ul>
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Section: Text -->
+
+
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      © 2024 Copyright:
+
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <script src="javascripts/scripts.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Mapbox GL JS -->
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js"></script>
+  <!-- Bootstrap JS (optional) -->
+  <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+
 
 </body>
 
