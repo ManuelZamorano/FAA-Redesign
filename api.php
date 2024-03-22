@@ -1,11 +1,7 @@
 <?php
 
 // Database connection parameters
-$host = 'mysql.faa-advisory-search.nerxmedia.com';
-$user = 'mannozam';
-$password = 'Pathos4417?';
-$database = 'advisories';
-$port = 3306;
+
 
 // Establish a connection to the database
 $mysqli = new mysqli($host, $user, $password, $database, $port);
